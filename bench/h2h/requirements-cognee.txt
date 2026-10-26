@@ -1,0 +1,3 @@
+cognee==1.6.5
+fastapi==0.159.1
+uvicorn==0.54.0

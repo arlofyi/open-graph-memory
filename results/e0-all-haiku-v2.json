@@ -1,0 +1,306 @@
+{
+  "experiment": "E0",
+  "ts": "2026-10-19T02:03:31.931Z",
+  "extractor": "claims@2/claude-haiku-5-5",
+  "convs": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "claimsPerTurn": 0.87,
+  "perConv": [
+    {
+      "conv": 0,
+      "sessions": 19,
+      "turns": 419,
+      "claims": 376,
+      "claimsPerTurn": 0.9,
+      "turnCoverage": 0.594,
+      "evidenceTurnCoverage": 0.909,
+      "questionsAllEvidenceCited": 0.927,
+      "questionsAllEvidenceCitedByCategory": {
+        "multi-hop": 0.938,
+        "temporal": 1,
+        "open-domain": 0.818,
+        "single-hop": 0.9
+      },
+      "withWhen": 0.245
+    },
+    {
+      "conv": 1,
+      "sessions": 19,
+      "turns": 369,
+      "claims": 332,
+      "claimsPerTurn": 0.9,
+      "turnCoverage": 0.599,
+      "evidenceTurnCoverage": 0.919,
+      "questionsAllEvidenceCited": 0.926,
+      "questionsAllEvidenceCitedByCategory": {
+        "multi-hop": 0.818,
+        "temporal": 1,
+        "open-domain": null,
+        "single-hop": 0.909
+      },
+      "withWhen": 0.205
+    },
+    {
+      "conv": 2,
+      "sessions": 32,
+      "turns": 663,
+      "claims": 589,
+      "claimsPerTurn": 0.89,
+      "turnCoverage": 0.558,
+      "evidenceTurnCoverage": 0.992,
+      "questionsAllEvidenceCited": 0.993,
+      "questionsAllEvidenceCitedByCategory": {
+        "multi-hop": 0.968,
+        "temporal": 1,
+        "open-domain": 1,
+        "single-hop": 1
+      },
+      "withWhen": 0.278
+    },
+    {
+      "conv": 3,
+      "sessions": 29,
+      "turns": 629,
+      "claims": 569,
+      "claimsPerTurn": 0.9,
+      "turnCoverage": 0.628,
+      "evidenceTurnCoverage": 0.972,
+      "questionsAllEvidenceCited": 0.965,
+      "questionsAllEvidenceCitedByCategory": {
+        "multi-hop": 0.892,
+        "temporal": 0.975,
+        "open-domain": 1,
+        "single-hop": 0.982
+      },
+      "withWhen": 0.23
+    },
+    {
+      "conv": 4,
+      "sessions": 29,
+      "turns": 680,
+      "claims": 544,
+      "claimsPerTurn": 0.8,
+      "turnCoverage": 0.601,
+      "evidenceTurnCoverage": 0.958,
+      "questionsAllEvidenceCited": 0.961,
+      "questionsAllEvidenceCitedByCategory": {
+        "multi-hop": 0.935,
+        "temporal": 1,
+        "open-domain": 1,
+        "single-hop": 0.953
+      },
+      "withWhen": 0.222
+    },
+    {
+      "conv": 5,
+      "sessions": 28,
+      "turns": 675,
+      "claims": 547,
+      "claimsPerTurn": 0.81,
+      "turnCoverage": 0.585,
+      "evidenceTurnCoverage": 0.952,
+      "questionsAllEvidenceCited": 0.951,
+      "questionsAllEvidenceCitedByCategory": {
+        "multi-hop": 0.867,
+        "temporal": 1,
+        "open-domain": 0.857,
+        "single-hop": 0.984
+      },
+      "withWhen": 0.186
+    },
+    {
+      "conv": 6,
+      "sessions": 31,
+      "turns": 689,
+      "claims": 641,
+      "claimsPerTurn": 0.93,
+      "turnCoverage": 0.624,
+      "evidenceTurnCoverage": 0.985,
+      "questionsAllEvidenceCited": 0.987,
+      "questionsAllEvidenceCitedByCategory": {
+        "multi-hop": 0.95,
+        "temporal": 1,
+        "open-domain": 1,
+        "single-hop": 0.988
+      },
+      "withWhen": 0.24
+    },
+    {
+      "conv": 7,
+      "sessions": 30,
+      "turns": 681,
+      "claims": 563,
+      "claimsPerTurn": 0.83,
+      "turnCoverage": 0.59,
+      "evidenceTurnCoverage": 0.976,
+      "questionsAllEvidenceCited": 0.979,
+      "questionsAllEvidenceCitedByCategory": {
+        "multi-hop": 0.857,
+        "temporal": 1,
+        "open-domain": 1,
+        "single-hop": 0.992
+      },
+      "withWhen": 0.242
+    },
+    {
+      "conv": 8,
+      "sessions": 25,
+      "turns": 509,
+      "claims": 454,
+      "claimsPerTurn": 0.89,
+      "turnCoverage": 0.633,
+      "evidenceTurnCoverage": 0.902,
+      "questionsAllEvidenceCited": 0.897,
+      "questionsAllEvidenceCitedByCategory": {
+        "multi-hop": 0.757,
+        "temporal": 0.939,
+        "open-domain": 0.769,
+        "single-hop": 0.973
+      },
+      "withWhen": 0.22
+    },
+    {
+      "conv": 9,
+      "sessions": 30,
+      "turns": 568,
+      "claims": 489,
+      "claimsPerTurn": 0.86,
+      "turnCoverage": 0.583,
+      "evidenceTurnCoverage": 0.955,
+      "questionsAllEvidenceCited": 0.962,
+      "questionsAllEvidenceCitedByCategory": {
+        "multi-hop": 0.969,
+        "temporal": 1,
+        "open-domain": 1,
+        "single-hop": 0.943
+      },
+      "withWhen": 0.19
+    }
+  ],
+  "precision": {
+    "judge": "claude-sonnet-5-5",
+    "n": 150,
+    "supported": 0.84,
+    "supportedOrPartial": 1,
+    "standalone": 0.987,
+    "dateCorrect": 0.921,
+    "datedN": 38
+  },
+  "failures": [
+    {
+      "id": "c5-session_15-15",
+      "supported": "partial"
+    },
+    {
+      "id": "c5-session_19-21",
+      "supported": "partial"
+    },
+    {
+      "id": "c8-session_17-8",
+      "supported": "partial"
+    },
+    {
+      "id": "c8-session_22-21",
+      "supported": "partial"
+    },
+    {
+      "id": "c5-session_14-4",
+      "supported": "partial"
+    },
+    {
+      "id": "c2-session_30-3",
+      "supported": "partial"
+    },
+    {
+      "id": "c4-session_16-10",
+      "supported": "partial"
+    },
+    {
+      "id": "c7-session_15-9",
+      "supported": "partial"
+    },
+    {
+      "id": "c6-session_25-4",
+      "supported": "partial"
+    },
+    {
+      "id": "c6-session_13-6",
+      "supported": "partial"
+    },
+    {
+      "id": "c2-session_4-9",
+      "supported": "partial"
+    },
+    {
+      "id": "c6-session_10-6",
+      "supported": "partial"
+    },
+    {
+      "id": "c6-session_25-0",
+      "supported": "partial"
+    },
+    {
+      "id": "c4-session_9-16",
+      "supported": "partial"
+    },
+    {
+      "id": "c9-session_22-10",
+      "supported": "partial"
+    },
+    {
+      "id": "c6-session_4-6",
+      "supported": "partial"
+    },
+    {
+      "id": "c6-session_5-11",
+      "supported": "partial"
+    },
+    {
+      "id": "c9-session_10-7",
+      "supported": "partial"
+    },
+    {
+      "id": "c3-session_16-10",
+      "supported": "partial"
+    },
+    {
+      "id": "c9-session_24-4",
+      "supported": "partial"
+    },
+    {
+      "id": "c3-session_29-17",
+      "supported": "partial"
+    },
+    {
+      "id": "c9-session_7-12",
+      "supported": "partial"
+    },
+    {
+      "id": "c7-session_19-24",
+      "supported": "partial"
+    },
+    {
+      "id": "c7-session_13-19",
+      "supported": "partial"
+    }
+  ],
+  "pass": {
+    "rule": "≥0.5 claims/turn at ≥85% supported",
+    "met": false
+  },
+  "kill": {
+    "rule": "<70% supported",
+    "met": false
+  },
+  "wallSeconds": 1143
+}

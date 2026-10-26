@@ -1,0 +1,21 @@
+{
+  "experiment": "E5",
+  "ts": "2026-10-19T01:53:50.173Z",
+  "realClaims": 5221,
+  "realTurns": 5882,
+  "realNoSynonyms": 14,
+  "realWithSynonymsPerConv": 2665,
+  "synthetic": {
+    "claims": 104420,
+    "turns": 117640,
+    "entities": 96300,
+    "edges": 292580,
+    "fullRebuildMs": 311
+  },
+  "pprQueryMs": 32,
+  "heapMB": 246,
+  "pass": {
+    "rule": "<30s full rebuild at ~100k claims (no synonym pass)",
+    "met": true
+  }
+}

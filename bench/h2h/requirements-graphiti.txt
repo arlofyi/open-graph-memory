@@ -1,0 +1,3 @@
+graphiti-core==0.31.2
+fastapi==0.159.1
+uvicorn==0.54.0

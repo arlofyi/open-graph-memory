@@ -1,0 +1,34 @@
+{
+  "experiment": "E3",
+  "ts": "2026-10-19T01:53:37.556Z",
+  "threshold": 0.92,
+  "entities": 4941,
+  "links": 166,
+  "judged": 120,
+  "linkPrecision": 48.3,
+  "wrongLinksPer1kEntities": 2.5,
+  "mergeWouldCreate": {
+    "clusters": 133,
+    "largest": 7,
+    "over3": 6
+  },
+  "wrong": [
+    "dairy free desserts ~ dairy free dessert recipes (0.977)",
+    "fantasy literature ~ fantasy novel (0.926)",
+    "animals ~ pets (0.920)",
+    "audrey's dogs ~ audrey and her dogs (0.926)",
+    "she is outdoors with her dogs ~ nature walks with her dogs (0.925)",
+    "audrey's oldest pet ~ audrey's youngest pet (0.924)",
+    "audrey's second pet ~ audrey's third pet (0.931)",
+    "his girlfriend and toby ~ his girlfriend toby (0.966)",
+    "his puppy ned ~ getting his puppy ned (0.933)"
+  ],
+  "pass": {
+    "rule": "<5 wrong links / 1k entities",
+    "met": true
+  },
+  "kill": {
+    "rule": ">20",
+    "met": false
+  }
+}

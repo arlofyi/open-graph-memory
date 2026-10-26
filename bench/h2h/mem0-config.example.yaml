@@ -1,0 +1,16 @@
+# Mem0 OSS configuration for the head-to-head. up.sh writes a copy with the
+# chat endpoint filled in to .cache/h2h/mem0-config.yaml.
+version: "v1.1"
+llm:
+  provider: openai
+  config:
+    model: claude-haiku-5-5
+    api_key: ${H2H_CHAT_KEY}
+    openai_base_url: ${H2H_CHAT_BASE}
+embedder:
+  provider: ollama
+  config:
+    model: bge-m3
+    ollama_base_url: http://127.0.0.1:11434
+    embedding_dims: 1024
+history_db_path: ${H2H_DIR}/mem0-history.db

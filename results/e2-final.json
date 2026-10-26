@@ -1,0 +1,136 @@
+{
+  "experiment": "E2",
+  "ts": "2026-10-19T01:34:30.842Z",
+  "tau": 0.6,
+  "claims": 221,
+  "table": {
+    "dense": {
+      "all": {
+        "n": 76,
+        "top1": 39.5,
+        "staleFirst": 60.5
+      },
+      "tune": {
+        "n": 54,
+        "top1": 42.6,
+        "staleFirst": 57.4
+      },
+      "heldOut": {
+        "n": 22,
+        "top1": 31.8,
+        "staleFirst": 68.2
+      },
+      "current": {
+        "n": 38,
+        "top1": 21.1,
+        "staleFirst": 78.9
+      },
+      "asOf": {
+        "n": 38,
+        "top1": 57.9,
+        "staleFirst": 42.1
+      },
+      "backfilled": {
+        "n": 14,
+        "top1": 50,
+        "staleFirst": 50
+      }
+    },
+    "dense+asOf": {
+      "all": {
+        "n": 76,
+        "top1": 55.3,
+        "staleFirst": 44.7
+      },
+      "tune": {
+        "n": 54,
+        "top1": 55.6,
+        "staleFirst": 44.4
+      },
+      "heldOut": {
+        "n": 22,
+        "top1": 54.5,
+        "staleFirst": 45.5
+      },
+      "current": {
+        "n": 38,
+        "top1": 21.1,
+        "staleFirst": 78.9
+      },
+      "asOf": {
+        "n": 38,
+        "top1": 89.5,
+        "staleFirst": 10.5
+      },
+      "backfilled": {
+        "n": 14,
+        "top1": 78.6,
+        "staleFirst": 21.4
+      }
+    },
+    "dense+asOf+recency": {
+      "all": {
+        "n": 76,
+        "top1": 84.2,
+        "staleFirst": 13.2
+      },
+      "tune": {
+        "n": 54,
+        "top1": 81.5,
+        "staleFirst": 16.7
+      },
+      "heldOut": {
+        "n": 22,
+        "top1": 90.9,
+        "staleFirst": 4.5
+      },
+      "current": {
+        "n": 38,
+        "top1": 76.3,
+        "staleFirst": 23.7
+      },
+      "asOf": {
+        "n": 38,
+        "top1": 92.1,
+        "staleFirst": 2.6
+      },
+      "backfilled": {
+        "n": 14,
+        "top1": 100,
+        "staleFirst": 0
+      }
+    },
+    "ogm(bitemporal)": {
+      "all": {
+        "n": 76,
+        "top1": 82.9,
+        "staleFirst": 2.6
+      },
+      "tune": {
+        "n": 54,
+        "top1": 83.3,
+        "staleFirst": 3.7
+      },
+      "heldOut": {
+        "n": 22,
+        "top1": 81.8,
+        "staleFirst": 0
+      },
+      "current": {
+        "n": 38,
+        "top1": 81.6,
+        "staleFirst": 2.6
+      },
+      "asOf": {
+        "n": 38,
+        "top1": 84.2,
+        "staleFirst": 2.6
+      },
+      "backfilled": {
+        "n": 14,
+        "top1": 92.9,
+        "staleFirst": 0
+      }
+    }
+  }
+}

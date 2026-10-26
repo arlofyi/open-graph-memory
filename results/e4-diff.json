@@ -1,0 +1,57 @@
+{
+  "experiment": "E4",
+  "ts": "2026-10-19T01:38:52.842Z",
+  "a": "haiku",
+  "b": "sonnet",
+  "per": [
+    {
+      "conv": 0,
+      "claimsA": 403,
+      "claimsB": 255,
+      "matched": 193,
+      "lost": 210,
+      "gained": 62,
+      "whenChanged": 37,
+      "entitiesOnlyA": 300,
+      "entitiesOnlyB": 162,
+      "entitiesBoth": 97,
+      "coverage": {
+        "a": 0.582,
+        "b": 0.537
+      }
+    },
+    {
+      "conv": 1,
+      "claimsA": 339,
+      "claimsB": 226,
+      "matched": 155,
+      "lost": 184,
+      "gained": 71,
+      "whenChanged": 44,
+      "entitiesOnlyA": 241,
+      "entitiesOnlyB": 138,
+      "entitiesBoth": 73,
+      "coverage": {
+        "a": 0.61,
+        "b": 0.583
+      }
+    }
+  ],
+  "summary": {
+    "explainable": 98,
+    "gained": {
+      "n": 25,
+      "trueGain": 76,
+      "falseGain": 4
+    },
+    "lost": {
+      "n": 25,
+      "realLoss": 88,
+      "trueLossOfBadClaim": 0
+    }
+  },
+  "pass": {
+    "rule": ">=90% explainable",
+    "met": true
+  }
+}

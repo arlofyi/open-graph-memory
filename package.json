@@ -1,0 +1,14 @@
+{
+  "name": "open-graph-memory",
+  "version": "0.0.0",
+  "private": true,
+  "license": "Apache-2.0",
+  "type": "module",
+  "description": "Memory for AI agents on an append-only claim ledger with a disposable entity graph (research proof of concept)",
+  "engines": { "node": ">=24" },
+  "scripts": {
+    "e0": "node bench/e0-extract.ts",
+    "e1": "node bench/e1-recall.ts",
+    "test": "node --test test/*.test.ts"
+  }
+}
