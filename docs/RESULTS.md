@@ -330,3 +330,31 @@ E0–E6). Embeddings ran locally and cost nothing.
 - **LongMemEval-S head-to-head (E8):** ingest cost per question is in the E8
   table above. Graphiti is the most expensive system to ingest into, because it
   makes several LLM calls for every message it stores.
+
+### Cost per query: ingest is not the whole story
+
+A memory system costs money in two places, and open-graph-memory and Mem0 win
+one each:
+
+| cost | when you pay it | R2-A | denseX | Mem0 | cheaper |
+|---|---|---|---|---|---|
+| **Ingest** | once, when messages are stored | $0.08 per question's history | $0.08 | $0.56 | open-graph-memory, about 7 times |
+| **Read** | on every query: the text handed to the answering model (LongMemEval-S, top 10) | 1,095 tokens | 2,281 tokens | 550 tokens | Mem0, 2 to 4 times |
+| **Search** | on every query: LLM calls to search | 1 (the query planner) | 0 | 0 | denseX and Mem0 |
+
+The read cost differs because of what each system returns. Mem0 returns short
+facts it has extracted ("the user's cat is named Miso"). open-graph-memory
+returns the original chat messages, and LongMemEval-S's assistant replies are
+long. On LoCoMo, where messages are short, the reads are about even (512
+tokens for R2-A, 433 for denseX and for Mem0).
+
+At the `claude-haiku-5-5` prices our runs were billed ($0.10 per million input
+tokens), R2-A costs about $0.00015 more per query than Mem0 (its extra context
+plus the planner call), and denseX about $0.00017 more. Its ingest saving of
+about $0.48 per history covers that for roughly the first 3,000 queries
+against the same history; beyond that, Mem0's leaner reads cost less.
+
+Two things move that break-even point. An answering model more expensive than
+Haiku makes every extra token read cost more, so the break-even comes sooner.
+And the token counts above are at top 10; a product that reads more results
+per query widens the gap the same way.
